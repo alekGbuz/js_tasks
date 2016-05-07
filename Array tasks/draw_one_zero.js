@@ -49,12 +49,12 @@ function createLineForSingle(oneCount,size){
 }
 function createSingleTriangle(size){
     var arr = [];
-    var buf = [];
     var oneCount;
+    var new_arr;
     for (var i=0; i < size;i++){
         oneCount = i+1;
         if (size - oneCount< Math.floor(size/2)){
-            var new_arr = arr.slice(0,arr.length-1);
+            new_arr = arr.slice(0,arr.length-1);
             new_arr.reverse();
             for(var j=0; j<new_arr.length;j++){
                 arr.push(new_arr[j]);
