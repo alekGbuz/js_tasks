@@ -51,8 +51,10 @@ var str5 = 'Pascal_Case'
 function isFirstLettersSameCase(words){
     var letterFlag = (words[0][0] === words[0][0].toUpperCase());
     for (var i=1;i < words.length;i++){
-        if (letterFlag !==(words[i][0]===words[i][0].toUpperCase())){
-            return false;
+        if(words[i]){
+            if (letterFlag !==(words[i][0]===words[i][0].toUpperCase())){
+                return false;
+            }
         }
     }
     return true;
@@ -61,6 +63,9 @@ function isFirstLettersSameCase(words){
 function checkPascalCase(str){
     str = str.trim(' ');
     if (str.indexOf('_') === -1 || str.indexOf(' ')!==-1){
+        return false;
+    }
+    if (str[0]==='_' || str[str.length-1]==='_'){
         return false;
     }
     if (!isFirstLettersSameCase(str.split('_'))){
