@@ -20,7 +20,7 @@ function getMaxValue(arr){
     var maxValue = arr[0][0];
     var bufMax;
     for(var i = 0; i<arr.length; i++){
-        var bufMax = arr[i].sort((function(a,b){return b-a}))[0];
+        bufMax = arr[i].sort((function(a,b){return b-a}))[0];
         if(bufMax>maxValue){
                maxValue = bufMax;
         }
