@@ -1,7 +1,7 @@
 'use strict';
 var data = ';key,value;key1,value1;arrayHere:k1,v1;k2,v2;k3,v3';
 var data2 =  ';key,value;key1,value1;key3,value3;'
-console.log('Input data ',data)
+
 
 function createObjectOutput(data){
 	var bufOutput = {}	;
