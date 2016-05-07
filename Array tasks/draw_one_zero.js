@@ -19,15 +19,14 @@ function createDoubleTriangles(size){
     var arr  = [];
     var zeroCount;
     var oneCount;
+    var new_arr;
     for(var i = 0;i < size;i++){
         zeroCount = i;
         oneCount = size-i*2;
         if (oneCount<0){
-            var new_arr = arr.slice(0,arr.length-1);
+            new_arr = arr.slice(0,arr.length-1);
             new_arr.reverse();
-            for(var j=0; j<new_arr.length;j++){
-                arr.push(new_arr[j]);
-            }
+            arr = arr.concat(new_arr);
             return arr;
         } else {
             arr.push(createLineForDouble(zeroCount,oneCount));
@@ -56,9 +55,7 @@ function createSingleTriangle(size){
         if (size - oneCount< Math.floor(size/2)){
             new_arr = arr.slice(0,arr.length-1);
             new_arr.reverse();
-            for(var j=0; j<new_arr.length;j++){
-                arr.push(new_arr[j]);
-            }
+            arr = arr.concat(new_arr);
            return arr;
         } else {
           arr.push(createLineForSingle(oneCount,size));
