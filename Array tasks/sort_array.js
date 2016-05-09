@@ -5,17 +5,13 @@ var obj3 = { a: 2, c: 3};
 var arOfObj = [obj1, obj2, obj3];
 
 
-function getPropSum(obj){
-    var propSum = 0;
-    for(var prop in obj){
-        propSum += obj[prop];
-    }
-    return propSum;
+function getPropCount(obj){
+    return Object.keys(obj).length;
 
 }
 
 function objSort(arOfObj,direction){
-    arOfObj.sort((function(a,b){return  getPropSum(a)- getPropSum(b)}))
+    arOfObj.sort((function(a,b){return  getPropCount(a)- getPropCount(b)}))
     if(direction === 'asc'){
         return arOfObj;
     } else if (direction === 'desc'){
