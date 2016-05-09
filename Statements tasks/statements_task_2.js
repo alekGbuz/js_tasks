@@ -13,7 +13,7 @@ function createObjectOutput(data){
 		} 
 	}
 
-	return bufOutput
+	return bufOutput;
 }
 
 function createArrayOutput(data){

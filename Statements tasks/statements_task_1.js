@@ -8,10 +8,10 @@ function isHexadecimal(str){
 
 function getNumber(str){
     var number;
-    var new_str = ''
+    var new_str = '';
     if (isHexadecimal(str)){
         number =  parseInt(str,16);
-        return number
+        return number;
 
     }
     for(var i = 0; i<str.length; i++){
