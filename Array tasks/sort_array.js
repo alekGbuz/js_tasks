@@ -13,26 +13,13 @@ function getPropSum(obj){
     return propSum;
 
 }
-function bubbleSort(arr) {
-    var temp;
-    for (var i = arr.length - 1; i > 0; i--) {
-        for (var j = 0; j < i; j++) {
-            if (getPropSum(arr[j]) > getPropSum(arr[j+1])) {
-                temp = arr[j];
-                arr[j] = arr[j+1];
-                arr[j+1] = temp;
-            }
-        }
-    }
-    return arr;
-}
 
 function objSort(arOfObj,direction){
-    var arr = bubbleSort(arOfObj);
+    arOfObj.sort((function(a,b){return  getPropSum(a)- getPropSum(b)}))
     if(direction === 'asc'){
-        return arr;
+        return arOfObj;
     } else if (direction === 'desc'){
-        return arr.reverse();
+        return arOfObj.reverse();
     }
 }
 
