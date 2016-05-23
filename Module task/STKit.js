@@ -416,9 +416,9 @@ var STKit = (function(){
     * @function itemsFunctionToStr
     * @private
     * @param {string} prop
-    * @param {function}
+    * @param {function} value
     * @returns {string}
-    * @description Create string from property and function of object
+    * @description Create string from property name of object  and function as property value
     */
     function itemsFunctionToStr(prop,value){
         var itemStr;
@@ -435,9 +435,9 @@ var STKit = (function(){
     * @function itemsArrayToStr
     * @private
     * @param {string} prop
-    * @param {array} Array of objects
+    * @param {array} value Array of objects
     * @returns {string}
-    * @description Create string from property and array of objects
+    * @description Create string from property of object and array of objects as property value
     */
     function itemsArrayToStr(prop,value){
         var arrStr='',itemStr;
