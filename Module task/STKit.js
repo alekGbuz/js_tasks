@@ -477,7 +477,6 @@ var STKit = (function(){
               throw new StringifyObjectException('Invalid data');
         }
         if(argsCount===2 && !callback && typeof(callback)!=='function'){
-            console.log('excep');
             throw new StringifyObjectException('Invalid data');
         }
         if ( argsCount<1 || argsCount>2 || typeof(obj)!=='object'){
