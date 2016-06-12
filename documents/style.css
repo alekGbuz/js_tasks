@@ -1,0 +1,43 @@
+
+body {
+    background-color: lightblue;
+}
+.container {
+	width: 1300px;
+	margin:0 auto;
+}
+form {
+    margin: 10px;
+}
+a {
+    margin-left:10px;
+}
+
+input,textarea {
+    margin-left:10px;
+    margin-right:10px;
+}
+.table {
+    padding-left:10px;
+    border-style:solid;
+    boder-color:#0000ff;
+    float:left;
+    width:400px;
+    min-height:300px;
+}
+
+
+.context {
+    padding-left:10px;
+    border-style:solid;
+    boder-color:#0000ff;
+    float:left;
+    float:right;
+    width: 800px;
+    min-height:300px;
+    position: fixed;
+    top: 26px;
+    left:720px
+
+
+}
